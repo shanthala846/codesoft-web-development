@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/jpeg" href="photo.jpeg">
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="#top">Home</a>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+<button id="darkModeBtn" class="btn">🌙 Dark Mode</button>
+<div class="container">
+        <img src="photo.jpeg" alt="Shanthala Kamath" class="profile-photo">
+   <h1>Shanthala Kamath</h1>
+    <h2 class="subtitle">
+        <span id="typing"></span>
+    </h2>
+        
+   <hr>
+   <h2>Career Objective</h2>
+<p>
+    To secure a challenging position in the IT industry where I can apply my knowledge of Web Development and C/C++ Programming, continuously learn new technologies, and contribute to the success of the organization while growing professionally.
+</p>
+
+    <h2 id="about">About Me</h2>
+    <p>
+        Hello! I am Shanthala Kamath, a BCA 2nd Semester student at National Degree College, Hospet.
+        I am passionate about Web Development and C/C++ Programming. I enjoy learning new technologies
+        and building creative projects.
+    </p>
+
+    <h2 id="education">Education</h2>
+    <p><strong>College:</strong> National Degree College, Hospet</p>
+    <p><strong>Course:</strong> Bachelor of Computer Applications (BCA)</p>
+    <p><strong>Semester:</strong> 2nd Semester</p>
+
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>C</span>
+    <span>C++</span>
+</div>
+
+    <h2>Internships</h2>
+    <ul>
+        <li>SoftGrowTech – IT Internship</li>
+         <li>CodSoft – Web Development Internship (Current)</li>
+    </ul>
+
+    <h2 id="projects">Projects</h2>
+    <div class="project-card">
+    <h3>Portfolio Website</h3>
+    <p>A personal portfolio website created using HTML and CSS.</p>
+</div>
+
+<div class="project-card">
+    <h3>Landing Page</h3>
+    <p>A responsive landing page with a modern design.</p>
+</div>
+
+<div class="project-card">
+    <h3>Calculator</h3>
+    <p>A simple calculator built using HTML, CSS, and JavaScript.</p>
+</div>
+
+<h2>Certifications</h2>
+
+<div class="project-card">
+    <h3>SoftGrowTech IT Internship</h3>
+    <p>Successfully completed a Certified IT Internship and Training.</p>
+    <a href="internship certificate.pdf" target="_blank" class="btn">📄 View Certificate</a>
+    </div>
+    <div class="project-card">
+    <h3>CodSoft Web Development Internship</h3>
+    <p>Currently working on HTML, CSS and JavaScript projects.</p>
+</div>
+    <h2>Achievements</h2>
+
+<div class="project-card">
+    <h3>🏆 Completed SoftGrowTech Internship</h3>
+    <p>Successfully completed a Certified IT Internship and received a certificate.</p>
+</div>
+
+<div class="project-card">
+    <h3>💻 Web Development</h3>
+    <p>Built personal portfolio and multiple HTML/CSS projects.</p>
+</div>
+
+<div class="project-card">
+    <h3>CodSoft Web Development Internship</h3>
+    <p>Currently working on HTML, CSS and JavaScript projects.</p>
+</div>
+
+<h2 id="contact">Contact</h2>
+<p>📧<strong>Email:</strong> shanthalakamath888@gmail.com</p>
+
+<div class="contact-buttons">
+<a href="https://www.linkedin.com/in/shanthala-kamath-74600a389" target="_blank" class="btn">💼 LinkedIn</a>
+
+<a href="https://github.com/shanthala846" target="_blank" class="btn">💻 GitHub</a>
+
+</div>
+<p style="text-align:center;">
+    <a href="Shanthala_Kamath_Resume.pdf" class="btn" target="_blank">📄 Download Resume</a>
+</p>
+<button id="topBtn" onclick="topFunction()">⬆ Top</button>
+<footer>
+    <p>© 2026 Shanthala Kamath | All Rights Reserved</p>
+</footer>
+<script>
+const text = "BCA Student | Web Developer | C/C++ Programmer";
+let i = 0;
+
+function typeWriter() {
+    if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 80);
+    }
+}
+
+typeWriter();
+document.getElementById("darkModeBtn").addEventListener("click", function() {
+    document.body.classList.toggle("dark-mode");
+});
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+</script>
+
+</body>
+</html>
